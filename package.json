@@ -1,7 +1,7 @@
 {
-  "name": "enspiraled",
+  "name": "Facestorm",
   "version": "1.0.0",
-  "description": "Circles on circles on circles, the React way.",
+  "description": "Faces on faces on faces, the React way.",
   "main": "server",
   "scripts": {
     "start": "node server & webpack --watch",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dev-academy-challenges/enspiraled.git"
+    "url": "https://github.com/andrew-rayco/hihihehe.git"
   },
   "author": "EDA",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dev-academy-challenges/enspiraled/issues"
+    "url": "https://github.com/andrew-rayco/hihihehe/issues"
   },
-  "homepage": "https://github.com/dev-academy-challenges/enspiraled",
+  "homepage": "https://github.com/andrew-rayco/hihihehe",
   "babel": {
     "presets": [
       "es2015",
