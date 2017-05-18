@@ -10987,28 +10987,21 @@ var _Home = __webpack_require__(96);
 
 var _Home2 = _interopRequireDefault(_Home);
 
+var _Facestorm = __webpack_require__(224);
+
+var _Facestorm2 = _interopRequireDefault(_Facestorm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App(props) {
-  var circle = {
-    cx: props.width / 2,
-    cy: props.height / 2,
-    level: 0,
-    r: 256
-  };
-
   return _react2.default.createElement(
     _reactRouterDom.HashRouter,
     null,
     _react2.default.createElement(
       'div',
       null,
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default }),
-      _react2.default.createElement(
-        'svg',
-        { width: props.width, height: props.height },
-        _react2.default.createElement('circle', { cx: circle.cx, cy: circle.cy, r: circle.r })
-      )
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: _Home2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/Facestorm', component: _Facestorm2.default })
     )
   );
 };
@@ -11042,6 +11035,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(198);
 
+var _Facestorm = __webpack_require__(224);
+
+var _Facestorm2 = _interopRequireDefault(_Facestorm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
@@ -11051,13 +11048,11 @@ var Home = function Home() {
     _react2.default.createElement(
       'h1',
       null,
-      ' Hello '
-    ),
-    '// ',
-    _react2.default.createElement(
-      _reactRouterDom.Link,
-      { to: '/' + FaceStorm },
-      'Hihi Facestorm'
+      _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: '/Facestorm' },
+        ' Hihi Facestorm '
+      )
     )
   );
 };
@@ -25434,6 +25429,39 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(198);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Facestorm = function Facestorm() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'Facestorm' },
+    _react2.default.createElement(
+      'h1',
+      null,
+      ' Facestorm '
+    )
+  );
+};
+
+exports.default = Facestorm;
 
 /***/ })
 /******/ ]);
