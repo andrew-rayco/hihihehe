@@ -21,3 +21,5 @@ const images = [
     'https://avatars3.githubusercontent.com/u/25414477?v=3&s=460'
 
 ]
+
+export default images
