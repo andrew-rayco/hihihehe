@@ -1,13 +1,33 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Facestorm = () => {
-  return (
-    <div className="Facestorm">
-    <h1> Facestorm </h1>
+class Facestorm extends React.Component {
+  //
+  // componentDidMount() {
+  //   document.body.addEventListener('keyup', (evt) =>
+  // {
+  //   if (evt.key == 'b') {
+  //     document.findElementById('bev').play()
+  //   }
+  //   console.log(evt.key)
+  // })
+  // //  document.getElementById('bev').play()
+  // }
 
-    </div>
-  )
+  render() {
+    return (
+
+      <div className="Facestorm">
+
+
+        <h1> Facestorm </h1>
+          <audio id='bev' src="/sounds/bev.m4a" autoPlay={true}>
+              Your browser does not support the <code>audio</code> element.
+          </audio>
+
+      </div>
+    )
+  }
 }
 
 export default Facestorm
