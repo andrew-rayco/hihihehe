@@ -3,6 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Home from './Home'
 import Facestorm from './Facestorm'
+import Mashup from './Mashup'
 
 const App = props => {
   return (
@@ -10,6 +11,7 @@ const App = props => {
     <div>
     <Route path='/' exact={true} component={Home}/>
     <Route path='/Facestorm'  component={Facestorm}/>
+    <Route path='/Facestorm' component={Mashup}/>
     </div>
     </Router>
   )

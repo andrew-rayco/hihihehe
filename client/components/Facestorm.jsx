@@ -67,9 +67,6 @@ class Facestorm extends React.Component {
       <div className="Facestorm">
         {this.renderChildren(this.state.children)}
         <h1> Facestorm </h1>
-          <audio id='bev' src="/sounds/bev.m4a" autoPlay={true}>
-              Your browser does not support the <code>audio</code> element.
-          </audio>
 
       </div>
     )
