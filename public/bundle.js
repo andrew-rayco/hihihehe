@@ -7391,6 +7391,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
@@ -7399,19 +7401,64 @@ var _reactRouterDom = __webpack_require__(57);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Facestorm = function Facestorm() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'Facestorm' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      ' Facestorm '
-    )
-  );
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Facestorm = function (_React$Component) {
+  _inherits(Facestorm, _React$Component);
+
+  function Facestorm() {
+    _classCallCheck(this, Facestorm);
+
+    return _possibleConstructorReturn(this, (Facestorm.__proto__ || Object.getPrototypeOf(Facestorm)).apply(this, arguments));
+  }
+
+  _createClass(Facestorm, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      document.body.addEventListener('keyup', function (evt) {
+        if (evt.key == 'b') {
+          document.getElementById('bev').play();
+        }
+      });
+      //  document.getElementById('bev').play()
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'Facestorm' },
+        _react2.default.createElement(
+          'h1',
+          null,
+          ' Facestorm '
+        ),
+        _react2.default.createElement(
+          'audio',
+          { id: 'bev', src: '/sounds/bev.m4a' },
+          'Your browser does not support the ',
+          _react2.default.createElement(
+            'code',
+            null,
+            'audio'
+          ),
+          ' element.'
+        )
+      );
+    }
+  }]);
+
+  return Facestorm;
+}(_react2.default.Component);
 
 exports.default = Facestorm;
+
+// {var audio = document.getElementById('bev')
+//   audio.play()}
 
 /***/ }),
 /* 63 */
