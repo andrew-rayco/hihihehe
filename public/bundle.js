@@ -11162,17 +11162,9 @@ exports.default = Home;
 
 /***/ }),
 /* 99 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var images = ['https://avatars0.githubusercontent.com/u/80690?v=3&s=460', 'https://avatars2.githubusercontent.com/u/24601704?v=3&s=460', 'https://avatars1.githubusercontent.com/u/25892646?v=3&s=460', 'https://avatars2.githubusercontent.com/u/25452399?v=3&s=460', 'https://avatars2.githubusercontent.com/u/25465309?v=3&s=460', 'https://avatars1.githubusercontent.com/u/25610428?v=3&s=460', 'https://avatars0.githubusercontent.com/u/3125856?v=3&s=400', 'https://avatars2.githubusercontent.com/u/23735378?v=3&s=400', 'https://avatars1.githubusercontent.com/u/25041420?v=3&s=460', 'https://avatars3.githubusercontent.com/u/25041420?v=3&s=400', 'https://avatars3.githubusercontent.com/u/72309?v=3&s=460', 'https://avatars0.githubusercontent.com/u/25888248?v=3&s=400', 'https://avatars3.githubusercontent.com/u/25002466?v=3&s=400', 'https://avatars1.githubusercontent.com/u/25476337?v=3&s=400', 'https://avatars2.githubusercontent.com/u/20761533?v=3&s=460', 'https://avatars0.githubusercontent.com/u/25313000?v=3&s=460', 'https://avatars2.githubusercontent.com/u/15813732?v=3&s=460', 'https://avatars0.githubusercontent.com/u/24973297?v=3&s=460', 'https://avatars1.githubusercontent.com/u/25238976?v=3&s=460', 'https://avatars3.githubusercontent.com/u/25414477?v=3&s=460'];
-
-exports.default = images;
+throw new Error("Module build failed: SyntaxError: Unexpected token (2:91)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m\u001b[36mconst\u001b[39m images \u001b[33m=\u001b[39m [\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2 | \u001b[39m    {name\u001b[33m:\u001b[39m\u001b[32m'Alan'\u001b[39m\u001b[33m,\u001b[39m image\u001b[33m:\u001b[39m \u001b[32m'https://avatars0.githubusercontent.com/u/80690?v=3&s=460'\u001b[39m\u001b[33m,\u001b[39m sound\u001b[33m:\u001b[39m}\u001b[33m,\u001b[39m\n \u001b[90m   | \u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3 | \u001b[39m    {name\u001b[33m:\u001b[39m\u001b[32m'Albie'\u001b[39m\u001b[33m,\u001b[39mimage\u001b[33m:\u001b[39m\u001b[32m'https://avatars2.githubusercontent.com/u/24601704?v=3&s=460'\u001b[39m\u001b[33m,\u001b[39msound\u001b[33m:\u001b[39m}\u001b[33m,\u001b[39m\n \u001b[90m 4 | \u001b[39m    {name\u001b[33m:\u001b[39m \u001b[32m'Alisa'\u001b[39m\u001b[33m,\u001b[39mimage\u001b[33m:\u001b[39m\u001b[32m'https://avatars1.githubusercontent.com/u/25892646?v=3&s=460'\u001b[39m\u001b[33m,\u001b[39msound\u001b[33m:\u001b[39m}\u001b[33m,\u001b[39m\n \u001b[90m 5 | \u001b[39m    {name\u001b[33m:\u001b[39m \u001b[32m'Andrew'\u001b[39m\u001b[33m,\u001b[39mimage\u001b[33m:\u001b[39m\u001b[32m'https://avatars2.githubusercontent.com/u/25452399?v=3&s=460'\u001b[39m\u001b[33m,\u001b[39msound\u001b[33m:\u001b[39m}\u001b[33m,\u001b[39m\u001b[0m\n");
 
 /***/ }),
 /* 100 */
