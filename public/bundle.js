@@ -7417,17 +7417,20 @@ var Facestorm = function (_React$Component) {
   }
 
   _createClass(Facestorm, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      document.body.addEventListener('keyup', function (evt) {
-        if (evt.key == 'b') {
-          document.getElementById('bev').play();
-        }
-      });
-      //  document.getElementById('bev').play()
-    }
-  }, {
     key: 'render',
+
+    //
+    // componentDidMount() {
+    //   document.body.addEventListener('keyup', (evt) =>
+    // {
+    //   if (evt.key == 'b') {
+    //     document.findElementById('bev').play()
+    //   }
+    //   console.log(evt.key)
+    // })
+    // //  document.getElementById('bev').play()
+    // }
+
     value: function render() {
       return _react2.default.createElement(
         'div',
@@ -7439,7 +7442,7 @@ var Facestorm = function (_React$Component) {
         ),
         _react2.default.createElement(
           'audio',
-          { id: 'bev', src: '/sounds/bev.m4a' },
+          { id: 'bev', src: '/sounds/bev.m4a', autoPlay: true },
           'Your browser does not support the ',
           _react2.default.createElement(
             'code',
@@ -7456,9 +7459,6 @@ var Facestorm = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Facestorm;
-
-// {var audio = document.getElementById('bev')
-//   audio.play()}
 
 /***/ }),
 /* 63 */
