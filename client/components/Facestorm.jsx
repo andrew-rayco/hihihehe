@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import images from './data/images'
 
-<<<<<<< HEAD
 class Facestorm extends React.Component {
   //
   // componentDidMount() {
@@ -16,9 +15,6 @@ class Facestorm extends React.Component {
   // //  document.getElementById('bev').play()
   // }
 
-  function randomPic(datafile) {
-    return datafile[Math.floor(Math.random() * 20) + 1]
-  }
 
   render() {
     return (
@@ -37,4 +33,7 @@ class Facestorm extends React.Component {
   }
 }
 
+function randomPic(datafile) {
+  return datafile[Math.floor(Math.random() * 20) + 1].image
+}
 export default Facestorm
