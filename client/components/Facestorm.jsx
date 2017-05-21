@@ -3,17 +3,7 @@ import {Link} from 'react-router-dom'
 import images from './data/images'
 
 class Facestorm extends React.Component {
-  //
-  // componentDidMount() {
-  //   document.body.addEventListener('keyup', (evt) =>
-  // {
-  //   if (evt.key == 'b') {
-  //     document.findElementById('bev').play()
-  //   }
-  //   console.log(evt.key)
-  // })
-  // //  document.getElementById('bev').play()
-  // }
+
 
 
   constructor (props) {
@@ -26,34 +16,49 @@ class Facestorm extends React.Component {
 
     this.state = {
       children: [{
-        width: this.windowWidth / 2,
-        height: this.windowWidth / 2,
+        width: this.windowWidth / 8,
+        height: this.windowWidth / 8,
         image: randomPic(images)
       }]
     }
-
-
   }
-  newChild(images) {
-    console.log("new child");
+
+  componentDidMount() {
+    document.Facestorm.addEventListener('click', (evt) => {
+      // if (evt.key == 'b') {
+      //   document.findElementById('bev').play()
+      // }
+      console.log(evt)
+    })
+    //  document.getElementById('bev').play()
+  }
+  newChild(images, x, y) {
+
     let newChildren = [...this.state.children]
     newChildren.push({
-      width: Math.floor(Math.random() * this.windowWidth ),
-      height: Math.floor(Math.random() * this.windowHeight ),
+      width: x,
+      height: y,
       image: randomPic(images)
     })
     this.setState({children: newChildren})
   }
+  // console.log(Math.floor(Math.random() * this.windowWidth)
 
   componentDidMount() {
-    console.log("mounted");
-    setInterval(() => {
-      this.newChild(images)
-    }, 921)
+    // setInterval(() => {
+    //   this.newChild(images)
+    // }, 921)
+    document.addEventListener('click', (evt) => {
+      this.newChild(images, evt.clientX, evt.clientY)
+      console.log(evt)
+    })
   }
 
   renderChild(child) {
-    return <img src={child.image}/>
+    console.log(child);
+    var imgWidth = child.width
+    console.log(imgWidth)
+    return <img src={child.image} position='absolute' width={imgWidth} left={child.height}/>
   }
 
   renderChildren(children) {

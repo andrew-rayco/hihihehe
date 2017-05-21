@@ -1,4 +1,10 @@
 
+body {
+	background-color: #161819;
+	margin: 0;
+	overflow: visible;
+}
+
 h1 {
 	color: #8EF2FF;
 	font-family: 'Roboto Slab';
@@ -23,12 +29,11 @@ a:hover {
 	color: #fff;
 }
 
-body {
-  background-color: #161819;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .home {
   margin: 50vh;
+}
+
+img {
+	border-radius: 50%;
+	position: absolute;
 }
